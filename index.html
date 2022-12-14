@@ -1,0 +1,432 @@
+<!DOCTYPE html>
+  <html lang="ro">
+    <head>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <meta name="author" content="Ionescu Bianca">
+      <meta name="keywords" content="IT, web design, SEO, marketing online">
+      <meta name="description" content="Prestăm servicii IT, design grafic, SEO, marketing online, ajutându-te să îți atingi scopul propus.">
+
+        <title>
+          Scorpion Tech
+        </title>
+
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+
+      <style>
+
+        /*body*/
+
+        body {
+        background-color: rgb(89, 133, 133);
+        }
+
+        /*navbar*/
+
+        .main-navbar {
+          background-color: rgb(35, 43, 43);
+        }
+
+        .main-navbar .navbar-brand {
+            font-size: 28px;
+            line-height: 36px;
+            margin-bottom: 0;
+            margin-right: 30px;
+        }
+
+        .main-navbar .navbar-brand img {
+            height: 50px;
+            margin-right: 10px;
+            vertical-align: bottom;
+        }
+
+        .main-navbar .nav-link {
+            color: rgb(227, 225, 225);
+        }
+
+        /*carusel*/
+
+        .carousel-item .ratio img {
+         object-fit: cover;
+        }
+
+        /*despre-noi*/
+
+        .alb {
+          color: aliceblue;
+        }
+
+        .verde {
+          color:rgb(65, 168, 137);
+        }
+
+        /*servicii*/
+
+        h3 {
+          padding:10px;
+        }
+        
+        .servicii {
+          background-color: rgb(203, 205, 205);
+        }
+
+        /*echipă*/
+
+        .echipa {
+          padding: 200px;
+        }
+
+        .card {
+          background: hsla(0, 0%, 100%, 0.55); 
+          backdrop-filter: blur(30px); 
+          z-index: 1;
+        }
+
+        /*footer*/
+
+        footer {
+          background-color:#232b2b;
+        }
+
+       .social {
+          background-color: #284844;
+        }
+      
+       .copyright {
+          background-color: rgba(0, 0, 0, 0.2)
+        }
+
+      </style>
+
+     </head>
+
+  <body>
+
+    <!--header(navbar)-->
+
+      <header class="navbar navbar-expand-md main-navbar sticky-top">
+          <nav class="container-xxl">
+            <a class="navbar-brand" href="index.html">
+              <img src="scorpion.png" alt="iconiță gri cu un scorpion" clas="w-100">
+            </a>
+
+            <h1 class="navbar-brand">
+                <a class="nav-link" href="index.html">Scorpion Tech</a>
+            </h1>
+
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#meniunav" aria-controls="meniunav" aria-expanded="false" aria-label="Toggle navigation">
+                  <span class="navbar-toggler-icon"></span>
+              </button>
+              
+              <div class="collapse navbar-collapse justify-content-end" id="meniunav">
+                  <ul class="nav main-menu flex-column flex-md-row">
+                      <li class="nav-item"><a class="nav-link" href="#desprenoi">Despre noi</a></li>
+                      <li class="nav-item"><a class="nav-link" href="#servicii">Servicii</a></li>
+                      <li class="nav-item"><a class="nav-link" href="#echipă">Echipă</a></li>
+                  </ul>
+              </div>
+          </nav>
+      </header>
+
+  <!--Carusel-->
+
+      <div id="caruselsmecher" class="carousel slide" data-bs-ride="carousel">
+          <div class="carousel-inner">
+            <!--Imagini carusel-->
+            <div class="carousel-item active">
+              <img src="poza1.png" class="d-block w-100" alt="iPad și Iphone deschise pe Instagram și un website">
+            </div>
+
+            <div class="carousel-item">
+              <img src="poza2.png" class="d-block w-100" alt="cod oglindit pe un ecran în alb și negru">
+            </div>
+
+            <div class="carousel-item">
+              <img src="poza3.png" class="d-block w-100" alt="o masă albă pe care se sprijină mâna unei persoane ce ține un telefon în mână, în jurul său fiind un ziar, o cană, un calculator, un cactus, un laptop, notițe și ștampilă.">
+            </div>
+
+            <div class="carousel-item">
+              <img src="poza4.png" class="d-block w-100" alt="oameni ce stau la o masă albă cu laptop-urile în față în timp ce se uită la un proiect pe calculator">
+            </div>
+
+            <div class="carousel-item">
+              <img src="poza5.png" class="d-block w-100" alt="Iconița de la mouse ce atinge un titlu legat de securitate">
+            </div>
+
+          </div>
+          <!--Butoane carusel-->
+          <button class="carousel-control-prev" type="button" data-bs-target="#caruselsmecher" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#caruselsmecher" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+
+      <!--Sectiunea-1-->
+        <div class="container">
+          <div class="row">
+            <div class="col-12 col-md-12 col-lg-6 col-xl-6">
+
+              <div class="p-5 my-4 bg-dark rounded-3 card">
+                  <h2 class="verde" id="desprenoi">Despre noi</h2>
+                  <p class="lead alb">Crearea unei prezențe digitale nu înseamnă pur și simplu construirea unui site web și așteptarea clienților. 
+                    Site-ul dvs. este baza online a companiei. Acesta servește drept punct de contact principal pentru clienți. 
+                    Ca atare, trebuie să vă asigurați că ocupă un loc înalt în motoarele de căutare, că iese în evidență față de concurență și este funcțional. 
+                  </p>
+                  <p class="lead alb">
+                    Echipa Scorpion Tech este bazată pe o întreagă echipă de profesioniști, cu o experiență în programare web, design grafic, SEO și marketing online. 
+                    Firma noastră s-a născut în anul 2019 în Alba Iulia și de atunci se află într-o continuă ascensiune. Garanția noastră este susținută de experiența acumulată, 
+                    portofoliul nostru incluzănd colaborări cu peste 80 companii private atât din România, cât și din străinătate. Multe dintre proiectele noastre vin din recomandările
+                    vechilor clienți, fapt ce atestă funcționalitatea proiectelor noastre. Acoperim întreaga călătorie de evoluție digitală a clienților noștri, de la hardware la software 
+                    și soluții de servicii gestionate. La noi, oamenii sunt pe primul loc și suntem fericiți să avem o echipă de minți grozave, cu inimile la locul potrivit. Clienții noștri
+                    primesc soluții tehnice de top și o echipă dedicată care colaborează cu ei la orice pas. Un aspect pe care echipa noastră pune accentul este timpul. Toți antreprenorii știu 
+                    ce inseamnă această resursă de neprețuit, astfel noi nu o vom irosi, deci încercăm să-ți prezentăm design-ul site-ului tău web cât mai aproape de "final". Pentru noi faptele 
+                    sunt mai importante decât cuvintele, așadar așteptăm să vă cunoaștem ca urmare a solicitării unei oferte. 
+                  </p>
+                  <a href="https://www.youtube.com/watch?v=8CBjKLGwLqE" target="_blank" class="btn btn-success btn-lg">Solicită o ofertă!</a></p>
+              </div>
+            </div>
+            <div class="col-12 col-md-12 col-lg-6 col-xl-6 my-auto">
+              <div class="p-5 my-4">
+                <img src="cip.png" class="w-50 mb-5 mx-auto d-block" alt="Iconiță turcoaz cu un cip ce are un creier negru desenat în mijloc">
+                <p class="lead alb p-5 my-4 bg-dark rounded-3">În calitate de proprietar de afaceri, este esențial să mențineți un design web receptiv pentru a atrage motoarele de căutare și utilizatorii online. Trebuie să vă asigurați că clienții țintă văd o platformă de afaceri legitimă atunci când vă caută compania online. În caz contrar, riscați să pierdeți încrederea din partea potențialilor clienți și să-i descurajați din a apela la serviciile dvs.</p>
+                <img src="beculet.png" class="w-50 mt-5 mx-auto d-block" alt="Beculeț albastru din care ies pătrățele decorative colorate și care are un cip turcoaz in partea dreaptă">
+              </div>
+            </div>
+
+        </div>
+      <!--Imagine--->
+          <div class="container">
+            <img src="desprenoi.png" class="w-100 mb-5 mx-auto d-block" alt="Un bărbat și o femeie ce discută la o masă, pe care se află un laptop și un telefon mobil">
+          </div>
+
+      <!--Sectiune-2-->
+      <div class="container rounded-3 bg-dark">
+        <div class="row p-5 my-4">
+          <h2 class="verde" id="servicii">
+            Servicii
+          </h2>
+          <p class="lead alb">
+            Scorpion Tech oferă servicii IT de primă clasă pentru companiile care doresc să profite de noi oportunităţi. 
+            Cu servicii IT concepute, create şi puse în aplicare în conformitate cu activitatea dumneavoastră, aveţi posibilitatea 
+            să vă întoarceți la ceea ce vă place, afacerea dumneavoastră. Acestea sunt serviciile pe care vi le putem oferi:
+          </p>
+              
+          <!--Serviciul-1-->
+          <div class="col-md-12 col-lg-4 col-xl-4 d-flex align-items-stretch mb-2 mt-2">
+
+              <div class="card servicii">
+                <h3 class="text-center">
+                  Design grafic
+                </h3>
+                <img src="designgrafic.png" class="card-img-top w-100" alt="desktop mov cu o pensulă albastră, deschis pe un program de design">
+                <div class="card-body">
+                  <p class="card-text">
+                    Cum arată afacerea ta online contează... așa că noi ținem cont de: identitatea vizuală, culorile, logo-ul, imaginile, fonturile, site-ul web, 
+                    mesajele transmise bine gândite. Acestea sunt șansa ta de a defini cine ești și ce faci, dar mai ales oportunitatea de a răspunde potențialilor 
+                    clienti la întrebarea „de ce am nevoie de tine?”
+                  </p>
+                  <h4>
+                    Doar 300 &euro;
+                    <span class="badge text-bg-success ms-2">
+                      Ofertă
+                    </span>
+                  </h4>
+                </div>
+              </div>
+              
+          </div>
+
+          <!--Serviciul-2-->
+          <div class="col-md-12 col-lg-4 col-xl-4 d-flex align-items-stretch mb-2 mt-2">
+
+            <div class="card servicii">
+              <h3 class="text-center">
+                Marketing online
+              </h3>
+              <img src="marketing.png" class="card-img-top w-100" alt="o iconiță albă cu un semn de apreciere galben, o iconiță albastră cu hashtag negru și o iconiță roz cu inimă albă">
+              <div class="card-body">
+                <p class="card-text">
+                  Echipa noastră de online marketing face analize detaliate pentru a se asigura că fiecare propoziție are înțeles și comunică valorile business-ului. 
+                  Adaptăm stilul de scriere în funcție de identitatea brandul-ui, dar și de publicul țintă.
+                </p>
+                <h4>
+                  Serviciu în mentenanță
+                  <span class="badge text-bg-danger">
+                    Indisponibil
+                  </span>
+                </h4>
+              </div>
+            </div>
+          
+          </div>
+
+        <!--Serviciul-3-->
+        <div class="col-md-12 col-lg-4 col-xl-4 d-flex align-items-stretch mb-2 mt-2">
+
+          <div class="card servicii">
+            <h3 class="text-center">
+              Programare web
+            </h3>
+            <img src="programare.png" class="card-img-top w-100" alt="Laptop pe fundal albastru ce are pe desktop simbol de cod">
+            <div class="card-body">
+              <p class="card-text">
+                Punem la dispoziţia clienţilor noştri o gamă largă de servicii de programare web: crearea de site-uri e-commerce pe diferite platforme,
+                dezvoltare sau programare software, administrarea de website-uri, statistica traficului din site, mentenanţă website. Serviciile noastre
+                includ toţi paşii necesari pentru a genera un rezultat de calitate: consultanţă, proiectare, programare, dezvoltare, instalare, testare, asistenţă, mentenanţă etc.
+              </p>
+              <h4>
+                600 &euro;
+                <span class="badge text-bg-success ms-2">
+                  Ofertă
+                </span>
+              </h4>
+            </div>
+          </div>
+          
+        </div>
+      </div>
+    </div>
+
+  <!--Imagine-Servicii-->
+  <div class="container">
+    <img src="servicii.png" class="w-100 mb-5 mx-auto d-block" alt="Desen grafic ce arată un telefon mobil controlat de către niște mâini la costum din care ies diferite particule în formă de mail-uri">
+  </div>
+
+  <!--Sectiune-3-->
+      <div class="container rounded-3 bg-dark py-4">
+        <h2 class="text-center verde" id="echipă">Echipă</h2>
+        <p class="lead alb text-center">Aceștia sunt scorpionii noștri:</p>
+      </div>
+
+  <!--Sectiune-4-->
+
+      <!--Angajat-1-->
+
+      <div class="container py-4 mt-5">
+        <div class="row g-0 align-items-center">
+          <div class="col-lg-6 mb-5 mb-lg-0">
+            <div class="card">
+              <div class="card-body p-lg-5 shadow-5">
+                <h3 class="fw-bold">
+                  <span class="text-dark">Amanda Bercu</span>
+                </h3>
+                <p class="fw-bold">
+                  Designer grafic
+                </p>
+                <p class="text-muted mb-4">
+                  Amanda a fost prima persoană ce s-a alăturat echipei încă de la început,
+                  din anul 2019. Aceasta este licențiată în IT, lucrând în acest domeniu în SUA, 
+                  Canada, Bangladesh, Regatul Unit cât și România. Amanda are un portofoliu de peste 
+                  90 colaborări cu firme din străinătate și ține cursuri de design grafic în Suedia și Irlanda 
+                  în fiecare an.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-6 mb-5 mb-lg-0">
+            <img src="Amanda.png" class="w-50 rounded-4" alt="portret alb-negru cu o femeie ce poartă o pălărie pe cap și un tricou cu motiv floral în timp ce se uită direct la cameră cu gura întredeschisă">
+          </div>
+        </div>
+      </div>
+
+      <!--Angajat-2-->
+
+      <div class="container py-4">
+        <div class="row g-0 align-items-center">
+          
+          <div class="col-lg-6 mb-5 mb-lg-0">
+            <div class="card">
+              <div class="card-body p-lg-5 shadow-5">
+                <h3 class="fw-bold">
+                  <span class="text-dark">Carina Popescu</span>
+                </h3>
+                <p class="fw-bold">
+                  Manager marketing
+                </p>
+                <p class="text-muted mb-4">
+                  Carina a condus campania cu cea mai mare performanță în 2020, 
+                  având o rată de deschidere de 25% și o medie de 500.000 USD în vânzări zilnice. 
+                  Aceasta este o expertă în domeniu, câștigând concursuri internaționale de marketing.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-6 mb-5 mb-lg-0">
+            <img src="Carina.png" class="w-50 rounded-4" alt="portret alb-negru cu o femeie ce poartă o bluză cu nasturi și un lănțișor la gât, zâmbind la cameră">
+          </div>
+          
+        </div>
+      </div>
+
+      <!--Angajat-3-->
+
+      <div class="container py-4">
+        <div class="row g-0 align-items-center">
+          <div class="col-lg-6 mb-5 mb-lg-0">
+            <div class="card">
+              <div class="card-body p-lg-5 shadow-5">
+                <h3 class="fw-bold">
+                  <span class="text-dark">Ecaterina Oancea</span>
+                </h3>
+                <p class="fw-bold">Programator web</p>
+                <p class="text-muted mb-4">Ecaterina este full stack web developer și programator. Ea construiește site-uri web personalizate moderne și receptive de cea mai bună calitate, având abilități solide la HTML, CSS, JavaScript, Bootstrap, C++ și Wordpress. Aceasta îți va gestiona proiectul într-un timp scurt, de la început până la sfârșit.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-6 mb-5 mb-lg-0">
+            <img src="Ecaterina.png" class="w-50 rounded-4" alt="portret alb-negru al unei femei ce ține un dosar în mână și zâmbește la cameră">
+          </div>
+        </div>
+      </div>
+  </div>
+
+  <!--Footer-->
+
+         <footer>
+           <footer class="text-center text-white mt-5">
+            <!-- Grid container -->
+            <div class="container p-4">
+          
+              <!--Sectiune: Social media-->
+              <section class="mb-4">
+
+                <!--Facebook-->
+                <a class="social btn btn-primary btn-floating m-1" href="https://www.facebook.com" role="button"><i class="fab fa-facebook-f"></i></a>
+          
+                <!--Twitter-->
+                <a class="social btn btn-primary btn-floating m-1" href="https://twitter.com" role="button"><i class="fab fa-twitter"></i></a>
+          
+                <!--Instagram-->
+                <a class="social btn btn-primary btn-floating m-1" href="https://www.instagram.com" role="button"><i class="fab fa-instagram"></i></a>
+          
+              </section>
+          
+           <!--Sectiune: Text-->
+            <section class="mb-4">
+              <p>Adresă de e-mail: <a href="mailto:scorpiontech@yahoo.com" target="_blank">scorpiontech@yahoo.com</a></p>
+              <p>Număr de telefon: <a href="tel:+40761435685">+40761435685</a></p>
+            </section>
+          
+          
+            </div>
+            <!--Copyright-->
+
+            <div class="copyright text-center p-3">
+              © 2022 Copyright: Scorpion Tech
+            </div>
+
+          
+          </footer>
+        
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/d6572ca7d6.js" crossorigin="anonymous"></script>
+
+    </body>
+    </html>
